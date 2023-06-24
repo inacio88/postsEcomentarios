@@ -19,8 +19,8 @@ namespace WebApplicationProjeto.Controllers
         public IActionResult Add(UsuarioViewModel usuarioView)
         {
             var usuario = new Usuario(usuarioView.nome, usuarioView.email);
-            _usuarioRepositorio.Add(usuario);
-            return Ok();
+            var id = _usuarioRepositorio.Add(usuario);
+            return Ok(id);
         }
 
         [HttpGet]

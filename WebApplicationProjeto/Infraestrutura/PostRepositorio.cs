@@ -6,10 +6,12 @@ namespace WebApplicationProjeto.Infraestrutura
     {
         private readonly ConnectionContext _context = new ConnectionContext();
 
-        public void Add(Post post)
+        public int Add(Post post)
         {
             _context.Post.Add(post);
             _context.SaveChanges();
+
+            return post.post_id;
         }
 
         public List<Post> GetAll()

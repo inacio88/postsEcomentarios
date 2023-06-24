@@ -2,7 +2,7 @@
 {
     public interface IPost
     {
-        void Add(Post post);
+        int Add(Post post);
 
         List<Post> GetAll();
     }

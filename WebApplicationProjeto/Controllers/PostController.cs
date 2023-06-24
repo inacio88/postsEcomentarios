@@ -21,8 +21,8 @@ namespace WebApplicationProjeto.Controllers
         public IActionResult Add(PostViewModel postView)
         {
             var post = new Post(postView.usuario_id, postView.texto);
-            _postRepositorio.Add(post);
-            return Ok();
+            var id = _postRepositorio.Add(post);
+            return Ok(id);
         }
         
         [HttpGet]

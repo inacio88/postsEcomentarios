@@ -2,7 +2,7 @@
 {
     public interface IUsuaio
     {
-        void Add(Usuario usuario);
+        int Add(Usuario usuario);
 
         List<Usuario> GetAll();
     }
