@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IUsuaio, UsuarioRepositorio>();
 builder.Services.AddTransient<IPost, PostRepositorio>();
+builder.Services.AddTransient<IComentario, ComentarioRepositorio>();
 
 
 var app = builder.Build();

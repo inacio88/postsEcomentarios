@@ -7,6 +7,8 @@ namespace WebApplicationProjeto.Infraestrutura
     {
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Post> Post{ get; set; }
+        public DbSet<Comentario> Comentario{ get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
           => optionsBuilder.UseNpgsql(
