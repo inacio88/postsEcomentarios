@@ -11,6 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<IUsuaio, UsuarioRepositorio>();
+builder.Services.AddTransient<IPost, PostRepositorio>();
+
 
 var app = builder.Build();
 

@@ -6,6 +6,8 @@ namespace WebApplicationProjeto.Infraestrutura
     public class ConnectionContext: DbContext
     {
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Post> Post{ get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
           => optionsBuilder.UseNpgsql(
               "Server=localhost;" +
