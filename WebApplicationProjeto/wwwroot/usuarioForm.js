@@ -20,8 +20,8 @@ const enviar = async (usuario) => {
         headers: {"Content-type": "application/json; charset=UTF-8"}
         });
         const result = await response.json();
-
-        console.log(result);
+        window.location.assign('index.html');
+        
     } catch (error) {
         console.log(error);
     }

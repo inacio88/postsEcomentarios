@@ -24,8 +24,12 @@ const preencher_lista_posts = () =>{
             var linha = document.createElement('tr');
             var coluna1 = document.createElement('td');
             var coluna2 = document.createElement('td');
+            var coluna3 = document.createElement('td');
+
             linha.appendChild(coluna1);
             linha.appendChild(coluna2);
+            linha.appendChild(coluna3);
+
             tabela.children[1].appendChild(linha);
 
             var link = document.createElement('a');
@@ -34,6 +38,13 @@ const preencher_lista_posts = () =>{
 
             coluna1.textContent = post.texto;
             coluna2.appendChild(link);
+
+
+            var linkVer = document.createElement('a');
+            linkVer.href = `listaComentario.html?post_id=${post.post_id}`
+            linkVer.text = 'ver comentários';
+
+            coluna3.appendChild(linkVer);
 
         });
     })

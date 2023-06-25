@@ -20,8 +20,8 @@ const enviar = async (comentario) => {
         headers: {"Content-type": "application/json; charset=UTF-8"}
         });
         const result = await response;
+        window.location.assign('index.html');
 
-        console.log(result);
     } catch (error) {
         console.log(error);
     }

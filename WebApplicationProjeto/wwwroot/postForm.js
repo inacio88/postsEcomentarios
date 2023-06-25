@@ -17,8 +17,8 @@ const enviar = async (post) => {
         headers: {"Content-type": "application/json; charset=UTF-8"}
         });
         const result = await response.json();
+        window.location.assign('index.html');
 
-        console.log(result);
     } catch (error) {
         console.log(error);
     }

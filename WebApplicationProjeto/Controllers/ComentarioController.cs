@@ -28,5 +28,12 @@ namespace WebApplicationProjeto.Controllers
             var comentarios = _comentarioRepositorio.GetAll();
             return Ok(comentarios);
         }
+
+        [HttpGet("{post_id}")]
+        public IActionResult GetAllByPostId([FromRoute] int post_id)
+        {
+            var comentarios = _comentarioRepositorio.GetAllByPostId(post_id);
+            return Ok(comentarios);
+        }
     }
 }

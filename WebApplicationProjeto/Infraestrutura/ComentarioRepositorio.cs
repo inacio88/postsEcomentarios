@@ -16,5 +16,17 @@ namespace WebApplicationProjeto.Infraestrutura
         {
             return _context.Comentario.ToList();
         }
+
+        public List<Comentario> GetAllByPostId(int post_id)
+        {
+            
+                var resultado = _context.Comentario
+                    .Where(comentario => comentario.post_id == post_id)
+                    .ToList();
+
+     
+
+            return resultado;
+        }
     }
 }
