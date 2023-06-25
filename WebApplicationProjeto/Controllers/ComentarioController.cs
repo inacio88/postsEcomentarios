@@ -5,7 +5,7 @@ using WebApplicationProjeto.ViewModel;
 namespace WebApplicationProjeto.Controllers
 {
     [ApiController]
-    [Route("api/comentaio")]
+    [Route("api/comentario")]
     public class ComentarioController : Controller
     {
         private readonly IComentario _comentarioRepositorio;
@@ -17,7 +17,7 @@ namespace WebApplicationProjeto.Controllers
         [HttpPost]
         public IActionResult Add(ComentarioViewModel comentarioView)
         {
-            var comentario = new Comentario(comentarioView.post_id, comentarioView.texto);
+            var comentario = new Comentario(comentarioView.post_id, comentarioView.texto, comentarioView.usuario_id);
             _comentarioRepositorio.Add(comentario);
             return Ok();
         }
