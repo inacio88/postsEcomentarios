@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationProjeto", "WebApplicationProjeto.csproj", "{96FD8A2B-A89A-4E3E-95F4-A0ABF171F7E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationProjeto", "WebApplicationProjeto.csproj", "{96FD8A2B-A89A-4E3E-95F4-A0ABF171F7E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{9C4BD358-BA0D-47A2-90F8-8FADA5795660}"
+	ProjectSection(SolutionItems) = preProject
+		Resource.resx = Resource.resx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

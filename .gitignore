@@ -20,7 +20,7 @@ build/
 !.nuget/packages/repositories.config
 
 # Windows Forms Designer generated files
-*.resx
+
 
 # Visual Studio code editor settings
 *.sln.docstates
